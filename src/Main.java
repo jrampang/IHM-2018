@@ -12,8 +12,8 @@ public class Main extends Application {
 		final Pane root = new Pane(); 
 		final Scene scene = new Scene(root, 300, 250); 
 		Button btn = new Button();
-        btn.setText("Say 'Hello World'");
-        root.getChildren().add(btn);
+		btn.setText("Say 'Hello World'");
+		root.getChildren().add(btn);
 		primaryStage.setTitle("IHM-2018"); 
 		primaryStage.setScene(scene);
 		primaryStage.show(); 
