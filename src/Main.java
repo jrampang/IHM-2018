@@ -16,7 +16,7 @@ public class Main extends Application {
 		root.getChildren().setAll(rectangle); 
 		final Scene scene = new Scene(root, 300, 250); 
 		primaryStage.setTitle("IHM-2018"); 
-		primaryStage.setScene(scene); 
+		primaryStage.setScene(scene);
 		primaryStage.show(); 
 	} 
   
