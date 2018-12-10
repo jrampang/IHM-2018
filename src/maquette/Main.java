@@ -17,6 +17,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         this.primaryStage = primaryStage;
+        this.primaryStage.setResizable(false);
         this.primaryStage.setTitle("Maquette IHM-2018-Langage");
 
         initRootLayout();
@@ -24,7 +25,7 @@ public class Main extends Application {
         //Open lexique_dictionnaire layout
         //Must be call on a button event on the future
         //in the Lexicon tab
-        show_lexique_dictionnary();
+        
     }
 
     /**
@@ -59,6 +60,7 @@ public class Main extends Application {
         	// Show the scene containing the layout.
             Scene scene = new Scene(lexique_dictionnary);
             Stage lexique_dictionnary_stage = new Stage();
+            lexique_dictionnary_stage.setResizable(false);
             lexique_dictionnary_stage.setTitle("Dictionnaire");
             lexique_dictionnary_stage.setScene(scene);
             lexique_dictionnary_stage.show();
@@ -121,7 +123,7 @@ public class Main extends Application {
         	// Show the scene containing the layout.
             Scene scene = new Scene(atelier_debutant);
             Stage atelier_debutant_stage = new Stage();
-            atelier_debutant_stage.setTitle("Exercice niveau débutant");
+            atelier_debutant_stage.setTitle("Exercice niveau dï¿½butant");
             atelier_debutant_stage.setScene(scene);
             atelier_debutant_stage.show();
         } catch (IOException e) {
@@ -142,7 +144,7 @@ public class Main extends Application {
         	// Show the scene containing the layout.
             Scene scene = new Scene(atelier_intermediaire);
             Stage atelier_intermediaire_stage = new Stage();
-            atelier_intermediaire_stage.setTitle("Exercice niveau intermédiaire");
+            atelier_intermediaire_stage.setTitle("Exercice niveau intermï¿½diaire");
             atelier_intermediaire_stage.setScene(scene);
             atelier_intermediaire_stage.show();
         } catch (IOException e) {
