@@ -16,7 +16,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IHM-2018-Langage">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.root_controller">
    <children>
       <TabPane layoutX="10.0" layoutY="10.0" prefHeight="720.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <tabs>
@@ -64,12 +64,12 @@
                               <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
                            </padding>
                         </Label>
-                        <Button alignment="CENTER" layoutX="1206.0" layoutY="647.0" maxHeight="30.0" maxWidth="72.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="72.0" text="Quitter" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                        <Button fx:id="btn_quitter_accueil" alignment="CENTER" layoutX="1206.0" layoutY="647.0" maxHeight="30.0" maxWidth="72.0" mnemonicParsing="false" onAction="#handleQuitterButton" prefHeight="30.0" prefWidth="72.0" text="Quitter" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Button>
-                        <Button layoutX="14.0" layoutY="647.0" maxHeight="30.0" maxWidth="72.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="72.0" text="Aide" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0">
+                        <Button fx:id="btn_aide_accueil" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="647.0" maxHeight="30.0" maxWidth="72.0" mnemonicParsing="false" onAction="#handleAideButton" prefHeight="30.0" prefWidth="72.0" text="Aide" textAlignment="CENTER" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -87,43 +87,59 @@
                               <Font size="24.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="227.0" layoutY="419.0" prefHeight="50.0" prefWidth="194.0" promptText="Tu mets ce que tu recherches ..." AnchorPane.leftAnchor="227.0" AnchorPane.rightAnchor="479.0" />
-                        <TextField layoutX="483.0" layoutY="419.0" prefHeight="50.0" prefWidth="168.0" promptText="Et tu obtiens sa traduction" AnchorPane.leftAnchor="479.0" AnchorPane.rightAnchor="227.0" />
-                        <Button alignment="CENTER" layoutX="101.0" layoutY="201.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="166.0" text="Mots indispensables" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="100.5" AnchorPane.rightAnchor="633.5" AnchorPane.topAnchor="201.0">
+                        <TextField layoutX="227.0" layoutY="481.0" prefHeight="50.0" prefWidth="194.0" promptText="Tu mets ce que tu recherches ..." AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="479.0" />
+                        <TextField layoutX="516.0" layoutY="481.0" prefHeight="50.0" prefWidth="168.0" promptText="Et tu obtiens sa traduction" AnchorPane.leftAnchor="516.0" AnchorPane.rightAnchor="190.0" />
+                        <Button fx:id="btn_aide_lexique" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="647.0" maxHeight="30.0" maxWidth="72.0" mnemonicParsing="false" onAction="#handleLexiqueAideButton" prefHeight="30.0" prefWidth="72.0" text="Aide" textAlignment="CENTER" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="367.0" layoutY="201.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="166.0" text="Phrases inévitables" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="367.0" AnchorPane.rightAnchor="367.0">
+                        <Button fx:id="btn_quitter_lexique" alignment="CENTER" contentDisplay="CENTER" layoutX="1193.0" layoutY="647.0" maxHeight="30.0" maxWidth="72.0" mnemonicParsing="false" onAction="#handleQuitterButton" prefHeight="30.0" prefWidth="72.0" text="Quitter" textAlignment="CENTER" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Button>
-                        <Button alignment="CENTER" layoutX="600.0" layoutY="200.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="166.0" text="Expressions à connaitre" textAlignment="CENTER" wrapText="true" AnchorPane.rightAnchor="100.5">
-                           <font>
-                              <Font size="14.0" />
-                           </font>
-                        </Button>
-                        <Button layoutX="14.0" layoutY="647.0" maxHeight="30.0" maxWidth="72.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="72.0" text="Aide" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0">
-                           <font>
-                              <Font size="14.0" />
-                           </font>
-                        </Button>
-                        <Button layoutX="1193.0" layoutY="647.0" maxHeight="30.0" maxWidth="72.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="72.0" text="Quitter" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
-                           <font>
-                              <Font size="14.0" />
-                           </font>
-                        </Button>
-                        <Label layoutX="227.0" layoutY="392.0" prefHeight="20.0" prefWidth="61.0" text="Source :">
+                        <Label layoutX="227.0" layoutY="459.0" prefHeight="20.0" prefWidth="61.0" text="Source :" AnchorPane.leftAnchor="190.0">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <Label layoutX="479.0" layoutY="392.0" prefHeight="20.0" prefWidth="45.0" text="Cible :">
+                        <Label layoutX="516.0" layoutY="459.0" prefHeight="20.0" prefWidth="45.0" text="Cible :">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Label>
+                        <GridPane layoutX="155.0" layoutY="85.0" prefHeight="300.0" prefWidth="590.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="btn_show_lexique_dictionnaire" alignment="CENTER" mnemonicParsing="false" onAction="#show_lexique_dictionnary" prefHeight="68.0" prefWidth="166.0" text="Mots indispensables" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btn_show_lexique_phrase" alignment="CENTER" mnemonicParsing="false" onAction="#show_lexique_phrase" prefHeight="68.0" prefWidth="166.0" text="Phrases inévitables" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btn_show_lexique_expression" alignment="CENTER" mnemonicParsing="false" onAction="#show_lexique_expression" prefHeight="68.0" prefWidth="166.0" text="Expressions à connaitre" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="87.0" prefWidth="296.0" text="Collection des mots et termes les plus courants et les plus utilisés dans la vie courante." textAlignment="CENTER" wrapText="true" />
+                              <Label prefHeight="98.0" prefWidth="296.0" text="Collection des phrases les plus utiles à connaitre." textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1" />
+                              <Label prefHeight="78.0" prefWidth="296.0" text="Collection des expressions les plus courantes et les plus utilisées dans la vie courante." textAlignment="CENTER" wrapText="true" GridPane.rowIndex="2" />
+                           </children>
+                        </GridPane>
                      </children>
                   </AnchorPane>
                </content>
@@ -137,19 +153,35 @@
                               <Font size="24.0" />
                            </font>
                         </Label>
-                        <Button alignment="CENTER" layoutX="104.0" layoutY="310.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="166.0" text="Débutant" AnchorPane.leftAnchor="100.5" AnchorPane.rightAnchor="633.5" AnchorPane.topAnchor="201.0" />
-                        <Button alignment="CENTER" layoutX="368.0" layoutY="201.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="166.0" text="Intermédaire" AnchorPane.leftAnchor="367.0" AnchorPane.rightAnchor="367.0" AnchorPane.topAnchor="201.0" />
-                        <Button alignment="CENTER" layoutX="650.0" layoutY="310.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="166.0" text="Maitrise" AnchorPane.leftAnchor="633.5" AnchorPane.rightAnchor="100.5" AnchorPane.topAnchor="201.0" />
-                        <Button contentDisplay="CENTER" layoutX="14.0" layoutY="648.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="72.0" text="Aide" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0">
+                        <Button fx:id="btn_aide_decouverte" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="648.0" mnemonicParsing="false" onAction="#handleDecouvertesAideButton" prefHeight="30.0" prefWidth="72.0" text="Aide" textAlignment="CENTER" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Button>
-                        <Button contentDisplay="CENTER" layoutX="1194.0" layoutY="648.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="72.0" text="Quitter" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                        <Button fx:id="btn_quitter_decouverte" alignment="CENTER" contentDisplay="CENTER" layoutX="1194.0" layoutY="648.0" mnemonicParsing="false" onAction="#handleQuitterButton" prefHeight="30.0" prefWidth="72.0" text="Quitter" textAlignment="CENTER" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Button>
+                        <GridPane layoutX="155.0" layoutY="100.0" prefHeight="375.0" prefWidth="590.0" AnchorPane.bottomAnchor="212.0" AnchorPane.leftAnchor="155.0" AnchorPane.rightAnchor="155.0" AnchorPane.topAnchor="100.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="125.0" minHeight="10.0" prefHeight="125.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="125.0" minHeight="10.0" prefHeight="125.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="125.0" minHeight="10.0" prefHeight="125.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button alignment="CENTER" mnemonicParsing="false" prefHeight="68.0" prefWidth="166.0" text="Débutant" textAlignment="CENTER" GridPane.columnIndex="1" />
+                              <Button alignment="CENTER" mnemonicParsing="false" prefHeight="68.0" prefWidth="166.0" text="Intermédaire" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Button alignment="CENTER" mnemonicParsing="false" prefHeight="68.0" prefWidth="166.0" text="Maitrise" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label prefHeight="80.0" prefWidth="290.0" text="Série de sujets ouvrant sur l'univers et la culture du peuple parlant la langue." textAlignment="CENTER" wrapText="true" />
+                              <Label prefHeight="80.0" prefWidth="290.0" text="Série de sujets approfondissants l'exploration de la culture étrangère." textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1" />
+                              <Label prefHeight="80.0" prefWidth="290.0" text="Série de sujets poussant la découverte de la culture de la langue jusqu'à ses moindres" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="2" />
+                           </children>
+                        </GridPane>
                      </children>
                   </AnchorPane>
                </content>
@@ -163,19 +195,39 @@
                               <Font size="24.0" />
                            </font>
                         </Label>
-                        <Button alignment="CENTER" layoutX="130.0" layoutY="191.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="166.0" text="Débutant" AnchorPane.leftAnchor="100.5" AnchorPane.rightAnchor="633.5" AnchorPane.topAnchor="201.0" />
-                        <Button alignment="CENTER" layoutX="367.0" layoutY="201.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="166.0" text="Intermédiaire" AnchorPane.leftAnchor="367.0" AnchorPane.rightAnchor="367.0" AnchorPane.topAnchor="201.0" />
-                        <Button alignment="CENTER" layoutX="609.0" layoutY="201.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="166.0" text="Maitrise" AnchorPane.leftAnchor="633.5" AnchorPane.rightAnchor="100.5" AnchorPane.topAnchor="201.0" />
-                        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="648.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="72.0" text="Aide" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0">
+                        <Button fx:id="btn_aide_ateliers" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="648.0" mnemonicParsing="false" onAction="#handleAteliersAideButton" prefHeight="30.0" prefWidth="72.0" text="Aide" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Button>
-                        <Button contentDisplay="CENTER" layoutX="1224.0" layoutY="638.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="72.0" text="Quitter" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                        <Button fx:id="btn_quitter_ateliers" alignment="CENTER" contentDisplay="CENTER" layoutX="1224.0" layoutY="638.0" mnemonicParsing="false" onAction="#handleQuitterButton" prefHeight="30.0" prefWidth="72.0" text="Quitter" textAlignment="CENTER" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Button>
+                        <GridPane layoutX="159.0" layoutY="103.0" prefHeight="375.0" prefWidth="590.0" AnchorPane.bottomAnchor="212.0" AnchorPane.leftAnchor="155.0" AnchorPane.rightAnchor="155.0" AnchorPane.topAnchor="100.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="125.0" minHeight="10.0" prefHeight="125.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="125.0" minHeight="10.0" prefHeight="125.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="125.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="btn_show_atelier_maitrise" alignment="CENTER" mnemonicParsing="false" onAction="#show_atelier_maitrise" prefHeight="68.0" prefWidth="166.0" text="Maitrise" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Button fx:id="btn_show_atelier_intermediaire" alignment="CENTER" mnemonicParsing="false" onAction="#show_atelier_intermediaire" prefHeight="68.0" prefWidth="166.0" text="Intermédiaire" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Button fx:id="btn_show_atelier_debutant" alignment="CENTER" mnemonicParsing="false" onAction="#show_atelier_debutant" prefHeight="68.0" prefWidth="166.0" text="Débutant" GridPane.columnIndex="1" />
+                              <Label prefHeight="80.0" prefWidth="290.0" text="Série d'exercices pour une personne commençant l'apprentissage." textAlignment="CENTER" wrapText="true" />
+                              <Label prefHeight="80.0" prefWidth="290.0" text="Série d'exercices pour une personne qui a commencé l'apprentissage mais possède encore certaines lacunes." textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1" />
+                              <Label prefHeight="80.0" prefWidth="290.0" text="Série d'exercices pour une personne qui est en fin d'apprentissage et veut tester ses compétences." textAlignment="CENTER" wrapText="true" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                        </GridPane>
                      </children>
                   </AnchorPane>
                </content>
