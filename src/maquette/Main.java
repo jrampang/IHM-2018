@@ -1,12 +1,12 @@
 package maquette;
 
+import java.awt.Dimension;
 import java.io.IOException;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -14,6 +14,8 @@ public class Main extends Application {
     private Stage primaryStage;
     private AnchorPane rootLayout;
 
+    private double width;
+    private double height;
     @Override
     public void start(Stage primaryStage) {
         this.primaryStage = primaryStage;
@@ -32,7 +34,9 @@ public class Main extends Application {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(Main.class.getResource("../view/root.fxml"));
             rootLayout = (AnchorPane) loader.load();
-
+            Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
+    		width = screenSize.getWidth() / 3;
+    		height = screenSize.getHeight() / 2;
             // Show the scene containing the root layout.
             Scene scene = new Scene(rootLayout);
             primaryStage.setScene(scene);
@@ -41,7 +45,7 @@ public class Main extends Application {
             e.printStackTrace();
         }
     }
-    
+
     /**
      * Returns the main stage.
      * @return
