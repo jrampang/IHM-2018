@@ -32,7 +32,7 @@ public class Main extends Application {
         try {
             // Load root layout from fxml file.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("../view/root.fxml"));
+            loader.setLocation(Main.class.getResource("view/root.fxml"));
             rootLayout = (AnchorPane) loader.load();
             Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
     		width = screenSize.getWidth() / 3;

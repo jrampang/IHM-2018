@@ -1,4 +1,4 @@
-package view;
+package maquette.view;
 
 import java.io.IOException;
 
@@ -117,7 +117,7 @@ public class root_controller {
         try {
             // Load
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("../view/lexique_dictionnaire.fxml"));
+            loader.setLocation(Main.class.getResource("view/lexique_dictionnaire.fxml"));
             AnchorPane lexicon_dictionnary = (AnchorPane) loader.load();
 
         	// Show the scene containing the layout.
@@ -139,7 +139,7 @@ public class root_controller {
         try {
             // Load person overview.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("../view/lexique_expression.fxml"));
+            loader.setLocation(Main.class.getResource("view/lexique_expression.fxml"));
             AnchorPane lexique_expression = (AnchorPane) loader.load();
 
         	// Show the scene containing the layout.
@@ -160,7 +160,7 @@ public class root_controller {
         try {
             // Load person overview.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("../view/lexique_phrase.fxml"));
+            loader.setLocation(Main.class.getResource("view/lexique_phrase.fxml"));
             AnchorPane lexique_phrase = (AnchorPane) loader.load();
 
         	// Show the scene containing the layout.
@@ -180,7 +180,7 @@ public class root_controller {
         try {
             // Load person overview.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("../view/atelier_debutant.fxml"));
+            loader.setLocation(Main.class.getResource("view/atelier_debutant.fxml"));
             AnchorPane atelier_debutant = (AnchorPane) loader.load();
 
         	// Show the scene containing the layout.
@@ -201,7 +201,7 @@ public class root_controller {
         try {
             // Load person overview.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("../view/atelier_intermediaire.fxml"));
+            loader.setLocation(Main.class.getResource("view/atelier_intermediaire.fxml"));
             AnchorPane atelier_intermediaire = (AnchorPane) loader.load();
 
         	// Show the scene containing the layout.
@@ -222,7 +222,7 @@ public class root_controller {
         try {
             // Load person overview.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("../view/atelier_maitrise.fxml"));
+            loader.setLocation(Main.class.getResource("view/atelier_maitrise.fxml"));
             AnchorPane atelier_maitrise = (AnchorPane) loader.load();
 
         	// Show the scene containing the layout.

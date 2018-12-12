@@ -1,4 +1,4 @@
-package view;
+package maquette.view;
 
 import java.io.IOException;
 import javafx.fxml.FXML;
@@ -37,14 +37,14 @@ public class atelier_debutant_controller {
 		alert.getDialogPane().setMinSize(400, 300);
         alert.setTitle("Aide");
         alert.setHeaderText(null);
-        alert.setContentText("Les anglais disent \"Bonjour\" de plusieurs façon, mais ils ne vont forcément pas le dire de la même façon , cela sera souvent en fonction de l'heure de la journée."
-        				   + "\nDe ce fait si c'est le matin (morning) ou l'après-midi (afternoon) ils vont associer le temps en le faisant précéder par Good (bon) donnant:"
+        alert.setContentText("Les anglais disent \"Bonjour\" de plusieurs faï¿½on, mais ils ne vont forcï¿½ment pas le dire de la mï¿½me faï¿½on , cela sera souvent en fonction de l'heure de la journï¿½e."
+        				   + "\nDe ce fait si c'est le matin (morning) ou l'aprï¿½s-midi (afternoon) ils vont associer le temps en le faisant prï¿½cï¿½der par Good (bon) donnant:"
         				   + "\n\n"
         				   + "Good Morning"
         				   + "\n"
         				   + "Good Afternoon"
         				   + "\n\n"
-        				   + "Hello est surtout utilisé pour répondre au téléphone (comme Allo en France) ou dire \"Salut\" et Welcome pour accueillir une ou plusieurs personne(s) (comme avec \"Bienvenue\")");
+        				   + "Hello est surtout utilisï¿½ pour rï¿½pondre au tï¿½lï¿½phone (comme Allo en France) ou dire \"Salut\" et Welcome pour accueillir une ou plusieurs personne(s) (comme avec \"Bienvenue\")");
         alert.showAndWait();
 	}
 
@@ -55,14 +55,14 @@ public class atelier_debutant_controller {
 		alert.getDialogPane().setMinSize(400, 300);
         alert.setTitle("Aide");
         alert.setHeaderText(null);
-        alert.setContentText("Les anglais disent \"Bonjour\" de plusieurs façon, mais ils ne vont forcément pas le dire de la même façon , cela sera souvent en fonction de l'heure de la journée."
-        				   + "\nDe ce fait si c'est le matin (morning) ou l'après-midi (afternoon) ils vont associer le temps en le faisant précéder par Good (bon) donnant:"
+        alert.setContentText("Les anglais disent \"Bonjour\" de plusieurs faï¿½on, mais ils ne vont forcï¿½ment pas le dire de la mï¿½me faï¿½on , cela sera souvent en fonction de l'heure de la journï¿½e."
+        				   + "\nDe ce fait si c'est le matin (morning) ou l'aprï¿½s-midi (afternoon) ils vont associer le temps en le faisant prï¿½cï¿½der par Good (bon) donnant:"
         				   + "\n\n"
         				   + "Good Morning"
         				   + "\n"
         				   + "Good Afternoon"
         				   + "\n\n"
-        				   + "Hello est surtout utilisé pour répondre au téléphone (comme Allo en France) et Welcome pour accueillir une ou plusieurs personne(s) (comme avec \"Bienvenue\")");
+        				   + "Hello est surtout utilisï¿½ pour rï¿½pondre au tï¿½lï¿½phone (comme Allo en France) et Welcome pour accueillir une ou plusieurs personne(s) (comme avec \"Bienvenue\")");
         alert.showAndWait();
 	}
 
@@ -73,14 +73,14 @@ public class atelier_debutant_controller {
 		alert.getDialogPane().setMinSize(400, 300);
         alert.setTitle("Aide");
         alert.setHeaderText(null);
-        alert.setContentText("Les anglais disent \"Bonjour\" de plusieurs façon, mais ils ne vont forcément pas le dire de la même façon , cela sera souvent en fonction de l'heure de la journée."
-				   + "\nDe ce fait si c'est le matin (morning) ou l'après-midi (afternoon) ils vont associer le temps en le faisant précéder par Good (bon) donnant:"
+        alert.setContentText("Les anglais disent \"Bonjour\" de plusieurs faï¿½on, mais ils ne vont forcï¿½ment pas le dire de la mï¿½me faï¿½on , cela sera souvent en fonction de l'heure de la journï¿½e."
+				   + "\nDe ce fait si c'est le matin (morning) ou l'aprï¿½s-midi (afternoon) ils vont associer le temps en le faisant prï¿½cï¿½der par Good (bon) donnant:"
 				   + "\n\n"
 				   + "Good Morning"
 				   + "\n"
 				   + "Good Afternoon"
 				   + "\n\n"
-				   + "Hello est surtout utilisé pour répondre au téléphone (comme Allo en France) ou dire \"Salut\" et Welcome pour accueillir une ou plusieurs personne(s) (comme avec \"Bienvenue\")");
+				   + "Hello est surtout utilisï¿½ pour rï¿½pondre au tï¿½lï¿½phone (comme Allo en France) ou dire \"Salut\" et Welcome pour accueillir une ou plusieurs personne(s) (comme avec \"Bienvenue\")");
         alert.showAndWait();
 	}
 
@@ -102,14 +102,14 @@ public class atelier_debutant_controller {
 		alert.getDialogPane().setMinSize(400, 300);
         alert.setTitle("Aide");
         alert.setHeaderText(null);
-        alert.setContentText("Les anglais disent \"Bonjour\" de plusieurs façon, mais ils ne vont forcément pas le dire de la même façon , cela sera souvent en fonction de l'heure de la journée."
-        				   + "\nDe ce fait si c'est le matin (morning) ou l'après-midi (afternoon) ils vont associer le temps en le faisant précéder par Good (bon) donnant:"
+        alert.setContentText("Les anglais disent \"Bonjour\" de plusieurs faï¿½on, mais ils ne vont forcï¿½ment pas le dire de la mï¿½me faï¿½on , cela sera souvent en fonction de l'heure de la journï¿½e."
+        				   + "\nDe ce fait si c'est le matin (morning) ou l'aprï¿½s-midi (afternoon) ils vont associer le temps en le faisant prï¿½cï¿½der par Good (bon) donnant:"
         				   + "\n\n"
         				   + "Good Morning"
         				   + "\n"
         				   + "Good Afternoon"
         				   + "\n\n"
-        				   + "Hello est surtout utilisé pour répondre au téléphone (comme Allo en France) et Welcome pour accueillir une ou plusieurs personne(s) (comme avec \"Bienvenue\")");
+        				   + "Hello est surtout utilisï¿½ pour rï¿½pondre au tï¿½lï¿½phone (comme Allo en France) et Welcome pour accueillir une ou plusieurs personne(s) (comme avec \"Bienvenue\")");
         alert.showAndWait();
 	}
 
