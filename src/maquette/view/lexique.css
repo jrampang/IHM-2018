@@ -1,0 +1,67 @@
+.title {
+	-fx-font-weight: bold;
+}
+
+.background {
+    -fx-background-color: #4CAF50;
+}
+
+.AnchorPane {
+	-fx-background-insets: 0 1 0 1,0,0;
+	-fx-background-color: #F1F1F1;
+}
+
+#button_quitter {
+	-fx-background-color: red;
+}
+
+#button_quitter:hover {
+	-fx-background-color: red;
+}
+
+.label {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Lucida Console";
+}
+
+.button {
+    -fx-padding: 5 22 5 22;
+    -fx-border-color: none;
+    -fx-border-width: 0;
+    -fx-background-radius: 3;
+    -fx-background-color: #4CAF50;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: black;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+	-fx-cursor: none;
+    -fx-background-color: #1E90FF;
+}
+
+.button:pressed {
+  -fx-background-color: #1E90FF;
+}
+
+.button:focused {
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}
+
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}

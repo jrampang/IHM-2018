@@ -28,12 +28,12 @@
                <content>
                   <AnchorPane prefHeight="254.0" prefWidth="600.0">
                      <children>
-                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="2.0" layoutX="319.0" layoutY="122.0" prefHeight="149.0" prefWidth="262.0" text="Bienvenue dans l'application IHM-2018-Langage qui a pour but d'aider toute personne cherchant à s'instruire dans une langue étrangère et sa culture." textAlignment="JUSTIFY" textOverrun="CLIP" wrapText="true" AnchorPane.leftAnchor="319.0" AnchorPane.rightAnchor="319.0">
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="2.0" layoutX="319.0" layoutY="122.0" prefHeight="149.0" prefWidth="262.0" text="Bienvenue dans l'application IHM-2018-Langage qui a pour but d'aider toute personne cherchant à s'instruire dans une langue étrangère et sa culture." textAlignment="CENTER" textOverrun="CLIP" wrapText="true" AnchorPane.leftAnchor="319.0" AnchorPane.rightAnchor="319.0">
                            <padding>
                               <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
                            </padding>
                         </Label>
-                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="36.0" layoutY="383.0" prefHeight="78.0" prefWidth="240.0" text="Pour tout comprendre et tout dire." textAlignment="JUSTIFY" wrapText="true">
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="36.0" layoutY="383.0" prefHeight="78.0" prefWidth="240.0" text="Pour tout comprendre et tout dire." textAlignment="CENTER" wrapText="true">
                            <padding>
                               <Insets bottom="2.0" left="20.0" right="20.0" top="2.0" />
                            </padding>
@@ -48,7 +48,7 @@
                               <Font name="Arial Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="330.0" layoutY="383.0" prefHeight="78.0" prefWidth="240.0" text="Un ensemble de magazines pour tout connaitre de la culture de la langue." textAlignment="JUSTIFY" wrapText="true" AnchorPane.leftAnchor="330.0" AnchorPane.rightAnchor="330.0">
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="330.0" layoutY="383.0" prefHeight="78.0" prefWidth="240.0" text="Un ensemble de magazines pour tout connaitre de la culture de la langue." textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="330.0" AnchorPane.rightAnchor="330.0">
                            <padding>
                               <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
                            </padding>
@@ -58,7 +58,7 @@
                               <Font name="Arial Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="624.0" layoutY="383.0" prefHeight="78.0" prefWidth="240.0" text="Pour pouvoir juger en autonomie son propre niveau." textAlignment="JUSTIFY" wrapText="true">
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="624.0" layoutY="383.0" prefHeight="78.0" prefWidth="240.0" text="Pour pouvoir juger en autonomie son propre niveau." textAlignment="CENTER" wrapText="true">
                            <padding>
                               <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
                            </padding>
@@ -80,6 +80,11 @@
                                     <Font name="System Bold" size="24.0" />
                                  </font>
                               </Label>
+                              <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="805.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../assets/img/profil.png" />
+                                 </image>
+                              </ImageView>
                            </children>
                         </Pane>
                      </children>
@@ -150,6 +155,11 @@
                                     <Font size="24.0" />
                                  </font>
                               </Label>
+                              <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="805.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../assets/img/profil.png" />
+                                 </image>
+                              </ImageView>
                            </children>
                         </Pane>
                      </children>
@@ -260,8 +270,14 @@
                                     <Font size="24.0" />
                                  </font>
                               </Label>
+                              <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="805.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../assets/img/profil.png" />
+                                 </image>
+                              </ImageView>
                            </children>
                         </Pane>
+                        <Button layoutX="422.0" layoutY="644.0" mnemonicParsing="false" text="+" />
                      </children>
                   </AnchorPane>
                </content>
@@ -310,6 +326,11 @@
                                     <Font size="24.0" />
                                  </font>
                               </Label>
+                              <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="805.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../assets/img/profil.png" />
+                                 </image>
+                              </ImageView>
                            </children>
                         </Pane>
                      </children>
