@@ -1,10 +1,18 @@
+.title {
+	-fx-font-weight: bold;
+}
+
+.background {
+    -fx-background-color: #4CAF50;
+}
+
 .tab {
 	-fx-background-insets: 0 1 0 1,0,0;
-	-fx-background-color: #FFFFFF;
+	-fx-background-color: #F1F1F1;
 }
 
 .tab-pane  {
-    -fx-background-color: #383838;
+    -fx-background-color: #F1F1F1;
 }
 
 .tab-label {
@@ -14,11 +22,11 @@
 }
 
 .tab:selected {
-    -fx-background-color: #383838;
+    -fx-background-color: #4CAF50;
 }
 
 .tab:selected .tab-label {
-    -fx-text-fill: white;
+    -fx-text-fill: black;
 }
 
 #button_quitter {
@@ -31,9 +39,7 @@
 
 .label {
     -fx-font-size: 11pt;
-    -fx-font-family: "Segoe UI Semibold";
-    -fx-text-fill: #FFFFFF;
-    -fx-opacity: 0.6;
+    -fx-font-family: "Lucida Console";
 }
 
 .button {
@@ -49,19 +55,17 @@
 }
 
 .button:hover {
-    -fx-background-color: #3a3a3a;
+	-fx-cursor: none;
+    -fx-background-color: #1E90FF;
 }
 
-.button:pressed, .button:default:hover:pressed {
-  -fx-background-color: white;
-  -fx-text-fill: #1d1d1d;
+.button:pressed {
+  -fx-background-color: #1E90FF;
 }
 
 .button:focused {
-    -fx-border-color: white, white;
     -fx-border-width: 1, 1;
     -fx-border-style: solid, segments(1, 1);
-    -fx-border-radius: 0, 0;
     -fx-border-insets: 1 1 1 1, 0;
 }
 
@@ -121,9 +125,3 @@
     -fx-font-size: 12pt;
     -fx-font-family: "Segoe UI Semibold";
 }
-
-/*
- * Metro style Push Button
- * Author: Pedro Duque Vieira
- * http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/
- */

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
@@ -18,10 +19,10 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maquette.view.atelier_debutant_controller">
+<AnchorPane prefHeight="600.0" prefWidth="900.0" stylesheets="@mainStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maquette.view.atelier_debutant_controller">
    <children>
-      <Button fx:id="btn_exo1lecon1" layoutX="244.0" layoutY="556.0" mnemonicParsing="false" onAction="#handleExercice1Lecon1Button" prefHeight="30.0" prefWidth="60.0" text="Leçon 1" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="244.0" />
-      <Button layoutX="832.0" layoutY="561.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" text="Quitter" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <Button fx:id="btn_exo1lecon1" alignment="CENTER" layoutX="244.0" layoutY="556.0" mnemonicParsing="false" onAction="#handleExercice1Lecon1Button" prefHeight="30.0" prefWidth="107.0" text="Leçon 1" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="244.0" />
+      <Button layoutX="832.0" layoutY="561.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="107.0" text="Quitter" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
       <TabPane layoutX="1.0" layoutY="3.0" prefHeight="544.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <tabs>
           <Tab text="Activité 1">
@@ -51,7 +52,7 @@
                               <RadioButton mnemonicParsing="false" prefHeight="17.0" prefWidth="180.0" text="Good Morning" toggleGroup="$answerToggle" GridPane.rowIndex="3" />
                               <RadioButton mnemonicParsing="false" prefHeight="17.0" prefWidth="180.0" text="Good Afternoon" toggleGroup="$answerToggle" GridPane.rowIndex="4" />
                               <RadioButton mnemonicParsing="false" prefHeight="17.0" prefWidth="180.0" text="Welcome" toggleGroup="$answerToggle" GridPane.rowIndex="5" />
-                              <Label alignment="CENTER" prefHeight="19.0" prefWidth="83.0" text="Question : " />
+                              <Label alignment="CENTER" prefHeight="19.0" prefWidth="98.0" text="Question: " />
                               <Label alignment="CENTER" prefHeight="17.0" prefWidth="330.0" text="Relier" GridPane.columnIndex="1" GridPane.columnSpan="2" />
                               <Label prefHeight="17.0" prefWidth="24.0" text="1:" GridPane.columnIndex="2" GridPane.rowIndex="2">
                                  <GridPane.margin>
@@ -64,9 +65,18 @@
                                  </GridPane.margin>
                               </Label>
                               <ImageView fitHeight="201.0" fitWidth="164.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.rowSpan="4" />
-                              <Label alignment="CENTER" prefHeight="34.0" prefWidth="203.0" text="Comment dit-on &quot;Bonjour&quot; l'après-midi?" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1" />
+                              <Label alignment="CENTER" prefHeight="56.0" prefWidth="203.0" text="Comment dit-on &quot;Bonjour&quot; l'après-midi?" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1" />
                            </children>
                         </GridPane>
+                        <Pane prefHeight="80.0" prefWidth="900.0" styleClass="background">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="354.0" layoutY="15.0" prefHeight="50.0" prefWidth="192.0" styleClass="title" text="Activité Niveau Débutant" textAlignment="CENTER" underline="true" wrapText="true">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
                      </children>
                   </AnchorPane>
             </content>
@@ -98,7 +108,7 @@
                               <RadioButton mnemonicParsing="false" prefHeight="17.0" prefWidth="180.0" text="Good Morning" toggleGroup="$answerToggle1" GridPane.rowIndex="3" />
                               <RadioButton mnemonicParsing="false" prefHeight="17.0" prefWidth="180.0" text="Hello" toggleGroup="$answerToggle1" GridPane.rowIndex="4" />
                               <RadioButton mnemonicParsing="false" prefHeight="17.0" prefWidth="180.0" text="Good Bye" toggleGroup="$answerToggle1" GridPane.rowIndex="5" />
-                              <Label alignment="CENTER" prefHeight="19.0" prefWidth="83.0" text="Question: " />
+                              <Label alignment="CENTER" prefHeight="19.0" prefWidth="97.0" text="Question: " />
                               <Label alignment="CENTER" prefHeight="17.0" prefWidth="330.0" text="Relier" GridPane.columnIndex="1" GridPane.columnSpan="2" />
                               <Label prefHeight="17.0" prefWidth="24.0" text="1:" GridPane.columnIndex="2" GridPane.rowIndex="2">
                                  <GridPane.margin>
@@ -111,15 +121,24 @@
                                  </GridPane.margin>
                               </Label>
                               <ImageView fitHeight="201.0" fitWidth="164.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.rowSpan="4" />
-                              <Label alignment="CENTER" prefHeight="34.0" prefWidth="195.0" text="Comment dit-on &quot;Bonne nuit&quot; ?" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1" />
+                              <Label alignment="CENTER" prefHeight="63.0" prefWidth="195.0" text="Comment dit-on &quot;Bonne nuit&quot; ?" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1" />
                            </children>
                         </GridPane>
+                        <Pane prefHeight="80.0" prefWidth="900.0" styleClass="background">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="354.0" layoutY="15.0" prefHeight="50.0" prefWidth="192.0" styleClass="title" text="Activité Niveau Débutant" textAlignment="CENTER" underline="true" wrapText="true">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
                      </children>
                   </AnchorPane>
                </content>
           </Tab>
         </tabs>
       </TabPane>
-      <Button layoutX="28.0" layoutY="559.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="Button" />
+      <Button alignment="CENTER" layoutX="28.0" layoutY="559.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="107.0" text="Aide" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="780.0" />
    </children>
 </AnchorPane>
